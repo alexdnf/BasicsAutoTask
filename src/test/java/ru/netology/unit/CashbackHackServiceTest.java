@@ -8,8 +8,8 @@ public class CashbackHackServiceTest {
     public void ifAmountLess1000Test() {
         CashbackHackService service = new CashbackHackService();
 
-        int actual = 1;
-        int expected = service.remain(999);
+        int expected = 1;
+        int actual = service.remain(999);
 
         Assert.assertEquals(actual, expected);
     }
@@ -18,8 +18,8 @@ public class CashbackHackServiceTest {
     public void ifAmountEquals1000Test() {
         CashbackHackService service = new CashbackHackService();
 
-        int actual = 0;
-        int expected = service.remain(1000);
+        int expected = 0;
+        int actual = service.remain(1000);
 
         Assert.assertEquals(actual, expected);
     }
@@ -28,8 +28,8 @@ public class CashbackHackServiceTest {
     public void ifAmountMore1000Test() {
         CashbackHackService service = new CashbackHackService();
 
-        int actual = 999;
-        int expected = service.remain(1001);
+        int expected = 999;
+        int actual = service.remain(1001);
 
         Assert.assertEquals(actual, expected);
     }
